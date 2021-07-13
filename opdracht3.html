@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Miniopdracht 3</title>
+	<script>
+		function checkLetter() {
+            var invoerwaarde = document.getElementById("invoer").value;
+            var invoerwaarde2 = document.getElementById("invoer2").value;
+            console.log(invoerwaarde);
+            var counter = 0;
+            for(var i = 0; i < invoerwaarde.length; i++){
+                if(invoerwaarde[i]==invoerwaarde2){
+                    counter++;
+                }
+            }
+            if (counter==1){
+                alert("Er zit maar 1 "+ invoerwaarde2+" in.");
+            }else{
+                alert("Er zitten "+counter+" "+invoerwaarde2+"'s in.");
+            }
+           
+        }
+		
+	</script>
+
+</head>
+
+<body>
+	Mini opdracht 3	
+    <br>
+	<div>
+		<input id="invoer">
+        <input id="invoer2"><p>Voer hier de letter in die je wilt tellen.</p>
+    </div>
+    <div>
+		<input type="button" value="tel de e's" onclick="checkLetter()">
+    </div>
+
+</body>
+</html>

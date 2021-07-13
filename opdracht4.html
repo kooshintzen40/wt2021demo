@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Miniopdracht 4</title>
+	<script>
+		function ButtonHistory(buttonparam){
+            var invoerwaarde = document.getElementsByClassName("buttons");
+            console.log(buttonparam);
+            alert("U heeft op de "+ invoerwaarde[0].value + " geklikt");
+        }        
+		
+	</script>
+
+</head>
+
+<body>
+	Mini opdracht 4
+    <br>
+	<div>
+		<input type=button class="buttons"id="button1" value="A" onclick="ButtonHistory(this.id)">
+        <input type=button class="buttons" id="button2" value="B" onclick="ButtonHistory(this.id)">
+        <input type=button class="buttons" id="button3" value="C" onclick="ButtonHistory(this.id)">
+        <input type=button class="buttons" id="button4" value="D" onclick="ButtonHistory(this.id)">
+    </div>
+
+</body>
+</html>

@@ -6,7 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Miniopdracht 2</title>
 	<script>
-		
+		function checkES() {
+            var invoerwaarde = document.getElementById("invoer").value;
+            console.log(invoerwaarde);
+            for(var i = 0; i < invoerwaarde.length; i++){
+                if(invoerwaarde[i]=="e"){
+                    alert("er zit een 'e' in")
+                    break;
+                }
+            }
+        }
 		
 	</script>
 
@@ -15,9 +24,12 @@
 <body>
 	Miniopdracht 2	
     <br>
-	<p>
-		
-	</p>
+	<div>
+		<input id="invoer">
+    </div>
+    <div>
+		<input type="button" value="tel de e's" onclick="checkES()">
+    </div>
 
 </body>
 </html>
