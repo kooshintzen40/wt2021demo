@@ -2,14 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content=
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function doeAlert(){
+			var elem = document.getElementById("invoerveld")
+			if(elem.value == "hallo"){
+			alert("welkom");
+			}else if (elem.value == "doei") {
+			alert("tot de volgende keer");
+			} 
+		}
+	</script>
 
 </head>
 
 <body>
-// nog meer iets
-// extra commit
-
+	Miniopdracht 1
+	<br>
+	<p>
+		<input id="invoerveld">
+		<input type="button" value="groetjes" onclick=doeAlert()>
+	</p>
 
 </body>
 </html>
