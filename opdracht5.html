@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Miniopdracht 4</title>
+	<title>Miniopdracht 5</title>
 	<style>
         #history{
             color: blue;
@@ -12,10 +12,18 @@
     </style>
     <script>
         const historyList = [];
+        var counter = 0;
 		function ButtonHistory(buttonparam){
-            var uitkomst = document.getElementById("history");
-            historyList.push(buttonparam);
-            uitkomst.innerHTML += " <br> U heeft op knop " + buttonparam + " geklikt."; 
+            
+            if(historyList.includes(buttonparam)){
+                alert("U heeft al "+counter+" keer op "+buttonparam+" geklikt.")
+                counter ++;
+            }else{   
+                var uitkomst = document.getElementById("history");
+                historyList.push(buttonparam);
+                console.log(historyList)
+                uitkomst.innerHTML += " <br> U heeft op knop " + buttonparam + " geklikt."; 
+            }
         }        
 		
 	</script>
@@ -23,7 +31,7 @@
 </head>
 
 <body>
-	Mini opdracht 4
+	Mini opdracht 5
     <br>
 	<div>
 		<input type=button class="buttons"id="button1" value="A" onclick="ButtonHistory(this.value)">
@@ -32,7 +40,6 @@
         <input type=button class="buttons" id="button4" value="D" onclick="ButtonHistory(this.value)">
     </div>
     <div id="history">
-
     </div>
 </body>
 </html>
