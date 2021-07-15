@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game{
+    position: absolute;
+    top: 12%;
+    left:30%;
+    width: 600px;
+    height: 716px;
+    background-color: rgb(43, 43, 255);
+    border: 2px black;
+}
+tr {
+    background-color: white;
+}
+tr:hover{
+    background-color: black;
+}
+td {
+    width: 100px;
+    height: 117px;
+    background-color: white;
+}
+/* .cells{
+    width: 100px;
+    height: 117px;
+    background: white;
+    border-color: blue;   
+}
+.rows{
+    width: 100px;
+    height: 100px;
+} */
